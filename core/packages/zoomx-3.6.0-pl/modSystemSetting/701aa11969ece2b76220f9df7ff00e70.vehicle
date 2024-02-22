@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'zoomx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bbc7979003bfbcfcfc263cf688b935b4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '701aa11969ece2b76220f9df7ff00e70',
+  'native_key' => 'zoomx_routing_mode',
+  'object' => '{"key":"zoomx_routing_mode","value":1,"xtype":"numberfield","namespace":"zoomx","area":"zoomx_routing","editedon":null}',
+);

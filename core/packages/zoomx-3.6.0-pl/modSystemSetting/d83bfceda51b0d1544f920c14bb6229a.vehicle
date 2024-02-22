@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'zoomx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '153f60f8885eea4301cdd3529faab258',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd83bfceda51b0d1544f920c14bb6229a',
+  'native_key' => 'zoomx_smarty_custom_plugin_dir',
+  'object' => '{"key":"zoomx_smarty_custom_plugin_dir","value":"{core_path}components\\/zoomx\\/smarty\\/custom_plugins\\/","xtype":"textfield","namespace":"zoomx","area":"zoomx_smarty","editedon":null}',
+);

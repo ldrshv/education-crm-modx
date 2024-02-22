@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modhelpers',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '949d3e5b27b320ec6a4d1d4bbc6bf434',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '64d614a6cb5007811ae25828daca3ea7',
+  'native_key' => 'modhelpers_print_template',
+  'object' => '{"key":"modhelpers_print_template","value":"","xtype":"textfield","namespace":"modhelpers","area":"modhelpers_main","editedon":null}',
+);

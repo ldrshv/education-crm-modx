@@ -1,0 +1,317 @@
+/*main*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: inset 0 0 0 999px rgb(255, 255, 255);
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+[type=number] {
+    appearance: textfield;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+
+
+/*colors*/
+.body--light {
+    --bg-light: #f7f8fa;
+    --bg-default: #fff;
+    --border-color: rgba(0, 0, 0, 0.12);
+}
+
+.body--dark {
+    --bg-light: #1d1d1d;
+    --bg-default: #121212;
+    --border-color: rgba(255, 255, 255, 0.28);
+}
+
+.bg-default {
+    background-color: var(--bg-default) !important;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+
+/*quasar customize*/
+.q-page {
+    // padding-top: calc(68px + 24px)  !important;
+    background-color: var(--bg-light);
+}
+
+.q-page-sticky {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.q-item__section--avatar {
+    min-width: 0 !important;
+}
+
+
+/*custom items*/
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 12px;
+    padding-top: calc(68px + 24px);
+    padding-bottom: 24px;
+    max-width: 1116px;
+
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+
+    > * {
+        padding: 0 12px;
+        margin-bottom: 24px;
+    }
+
+    > *:not(.main__sidebar) {
+        flex: 1;
+    }
+
+    &__sidebar {
+        @media (min-width: 1024px) {
+            min-width: 320px;
+        }
+    }
+}
+
+.box {
+    padding: 24px;
+    background-color: var(--bg-default);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+    > h2 {
+        margin-top: 0;
+    }
+}
+
+.box + .box {
+    margin-top: 24px;
+}
+
+.checkbox-title {
+    display: block;
+    margin: -5px 0 -5px 15px !important;
+
+    > * {
+        display: flex !important;
+    }
+}
+
+// :root {
+//     --color-text: #4B4B5A;
+// }
+
+// body {
+//     font-family: 'Nunito Sans', sans-serif !important;
+//     color: var(--color-text);
+
+//     .q-field__native,
+//     .q-field__prefix,
+//     .q-field__suffix,
+//     .q-field__input,
+//     .q-field__label  {
+//         letter-spacing: unset;
+//     }
+
+//     .q-field__control {
+//         height: 48px;
+//     }
+
+//     .q-field--auto-height .q-field__control,
+//     .q-field--auto-height .q-field__native {
+//         min-height: 48px;
+//     }
+
+//     .q-field--auto-height.q-field--labeled .q-field__control-container {
+//         padding-top: 0;
+//     }
+
+//     .q-field--outlined .q-field__control:after  {
+//         border-width: 1px !important;
+//     }
+
+//     .q-field--labeled .q-field__native,
+//     .q-field--labeled .q-field__prefix,
+//     .q-field--labeled .q-field__suffix {
+//         padding: 0;
+//     }
+
+//     .q-field__label {
+//         z-index: 10;
+//         top: 14px;
+//         left: -0.25em;
+//         padding: 0 0.25em;
+//         background-color: #fff;
+//         font-size: 1em;
+//         transform: translateY(-22px) scale(0.9) !important;
+//         font-weight: 600 !important;
+//     }
+
+//     ._required .q-field__label::after {
+//         content: ' *';
+//         color: var(--q-negative);
+//     }
+
+//     // .q-field--float .q-field__label,
+//     // .q-field__native:-webkit-autofill + .q-field__label,
+//     // .q-field__input:-webkit-autofill + .q-field__label {
+//     //     transform: translateY(-22px) scale(0.9);
+//     //     font-weight: 600;
+//     // }
+
+//     .q-field__marginal {
+//         height: 48px;
+//     }
+
+
+//     .q-table__card  {
+//         color: inherit !important;
+//     }
+    
+
+//     .q-btn {
+//         min-height: 39px;
+//         text-transform: none;
+//         &::before {
+//             box-shadow: none;
+//         }
+//     }
+
+
+//     .q-inner-loading {
+//         z-index: 999;
+//     }
+
+
+//     .q-avatar img:not(.q-icon):not(.q-img__image) {
+//         object-fit: cover;
+//     }
+
+
+//     .q-dialog__title {
+//         font-size: 1rem;
+//         line-height: 1.5;
+//     }
+// }
+
+
+// .layout-vtabs {
+//     > * {
+//         position: relative;
+//     }
+
+//     @media (min-width: 1024px) {
+//         display: grid;
+//         grid-template-columns: 160px 1fr;
+//         gap: 24px;
+//     }
+
+//     @media (min-width: 1200px) {
+//         grid-template-columns: 2fr 10fr;
+//     }
+// }
+
+
+// .vtabs {
+//     .q-tab {
+//         padding-top: 8px;
+//         padding-bottom: 8px;
+//         text-transform: none;
+//     }
+
+//     .q-tab._active {
+//         pointer-events: none;
+//     }
+
+//     .q-tab__icon {
+//         margin-bottom: 4px;
+//     }
+
+//     ._active .q-tab__indicator {
+//         opacity: 1;
+//     }
+
+//     @media (min-width: 1024px) {
+//         .q-tabs__content {
+//             display: grid;
+//             gap: 24px;
+//             overflow: visible;
+//         }
+
+//         .q-tab {
+//             position: relative;
+//             padding: 28px 20px;
+//             background-color: #fff;
+//             border-radius: 0.5rem;
+//             box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+//             opacity: 1;
+//         }
+
+//         .q-tab._active {
+//             color: #fff;
+//             background: var(--q-primary);
+//         }
+
+//         .q-tab__indicator {
+//             display: none !important;
+//         }
+
+//         .q-tab__icon {
+//             margin-bottom: 8px;
+//             width: 32px;
+//             height: 32px;
+//         }
+//     }
+// }
+
+
+// .sidebar-menu {
+//     .q-icon {
+//         font-size: 16px !important;
+//     }
+
+//     .q-expansion-item__toggle-icon:not(.q-expansion-item__toggle-icon--rotated) {
+//         transform: rotate(270deg);
+//     }
+
+//     div.q-item {
+//         padding-right: 32px;
+//         padding-left: 32px;
+//         font-size: 15px;
+//     }
+
+//     .q-expansion-item--expanded div.q-item {
+//         box-shadow: inset 6px 0 0 -3px var(--q-primary);
+//         color: var(--q-primary);
+
+//         & > .q-focus-helper {
+//             opacity: 0.075;
+//             background-color: currentColor;
+//         }
+//     }
+
+//     a.q-item {
+//         padding: 8px 20px;
+//         padding-left: 64px;
+//         min-height: 0;
+    
+//         .q-item__label {
+//             line-height: 1.5 !important;
+//         }
+//     }
+
+// }

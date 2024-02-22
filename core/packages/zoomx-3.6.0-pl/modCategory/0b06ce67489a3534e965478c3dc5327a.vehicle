@@ -1,0 +1,169 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'b646d5c0062e8f810c68b69016215c83' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '1423239cff51cfd37d6cff83b0ae428b' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnMODXInit","priority":-1000,"propertyset":0}',
+              'guid' => 'cbde96d8bc6eb0597c4eb0bcbcef254b',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnMODXInit',
+              ),
+              'signature' => '047b648a0bb9bd8a9c35a5d462943a78',
+            ),
+            '3d76d1e988ceef84eaf657febd393e70' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnSiteRefresh","priority":0,"propertyset":0}',
+              'guid' => '33f14eee0381268eb54eb27c04e35f9a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnSiteRefresh',
+              ),
+              'signature' => '9cff4b7049bcde10dd51c3953784b2ef',
+            ),
+            '2e57166116adcc6e5496657df98125a1' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnCacheUpdate","priority":0,"propertyset":0}',
+              'guid' => '7b862c5c0bacbbf8d8c471110a725f6c',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnCacheUpdate',
+              ),
+              'signature' => '272f36debe7782674b79f837911d7b5d',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"ZoomX","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var modX $modx *\\/\\r\\nif ($modx->event->name === \'OnMODXInit\') {\\r\\n    if (getenv(\\"APP_ENV\\") !== \\"test\\") {\\r\\n        $corePath = $modx->getOption(\'zoomx_core_path\', null, MODX_CORE_PATH . \'components\\/zoomx\\/\');\\r\\n        include_once $corePath . \'vendor\\/autoload.php\';\\r\\n    }\\r\\n    Zoomx\\\\Service::getInstance($modx)->initialize();\\r\\n    return;\\r\\n}\\r\\n\\r\\ntry {\\r\\n    $parser = parserx();\\r\\n} catch (Throwable $e) {\\r\\n    $modx->log(modX::LOG_LEVEL_ERROR, $e->getMessage());\\r\\n    return;\\r\\n}\\r\\n\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnSiteRefresh\':\\r\\n        $parser->refresh();\\r\\n        break;\\r\\n    case \'OnCacheUpdate\':\\r\\n        zoomx()->getCacheManager()->refresh([\'zoomx\']);\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/zoomx\\/elements\\/plugins\\/zoomx.php","content":"\\/** @var modX $modx *\\/\\r\\nif ($modx->event->name === \'OnMODXInit\') {\\r\\n    if (getenv(\\"APP_ENV\\") !== \\"test\\") {\\r\\n        $corePath = $modx->getOption(\'zoomx_core_path\', null, MODX_CORE_PATH . \'components\\/zoomx\\/\');\\r\\n        include_once $corePath . \'vendor\\/autoload.php\';\\r\\n    }\\r\\n    Zoomx\\\\Service::getInstance($modx)->initialize();\\r\\n    return;\\r\\n}\\r\\n\\r\\ntry {\\r\\n    $parser = parserx();\\r\\n} catch (Throwable $e) {\\r\\n    $modx->log(modX::LOG_LEVEL_ERROR, $e->getMessage());\\r\\n    return;\\r\\n}\\r\\n\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnSiteRefresh\':\\r\\n        $parser->refresh();\\r\\n        break;\\r\\n    case \'OnCacheUpdate\':\\r\\n        zoomx()->getCacheManager()->refresh([\'zoomx\']);\\r\\n        break;\\r\\n}","file":"zoomx","events":{"OnMODXInit":{"priority":-1000},"OnSiteRefresh":[],"OnCacheUpdate":[]}}',
+        'guid' => '87dee985f074c59944b6c88e9602038d',
+        'native_key' => NULL,
+        'signature' => 'ea34a6b4012fa903edacf70b24d05f2d',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => true,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'zoomx',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"zoomx"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.cache.resolver","type":"php","name":"cache"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.command.resolver","type":"php","name":"command"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.events.resolver","type":"php","name":"events"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.exceptions.resolver","type":"php","name":"exceptions"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.routes.resolver","type":"php","name":"routes"}',
+    ),
+    6 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"zoomx-3.6.0-pl\\/modCategory\\/0b06ce67489a3534e965478c3dc5327a.settings.resolver","type":"php","name":"settings"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '36aff302ce70daefe0ce65c004ba18e2',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '0b06ce67489a3534e965478c3dc5327a',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"ZoomX","rank":0}',
+);

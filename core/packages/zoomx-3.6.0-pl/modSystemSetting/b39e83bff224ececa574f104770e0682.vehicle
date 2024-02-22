@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'zoomx',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9845cad94150c98d267ff44c16dfde1a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b39e83bff224ececa574f104770e0682',
+  'native_key' => 'zoomx_controller_namespace',
+  'object' => '{"key":"zoomx_controller_namespace","value":"Zoomx\\\\Controllers\\\\","xtype":"textfield","namespace":"zoomx","area":"zoomx_routing","editedon":null}',
+);

@@ -1,0 +1,17 @@
+.cache
+.ssh
+.bash_history
+.vscode
+node_modules
+
+/core/cache
+/core/config/config.inc.php
+/public_html/assets/_cache
+/public_html/cgi-bin
+/public_html/files
+
+/html
+
+/_docker/data/*
+/_docker/logs/*
+/_docker/config/*

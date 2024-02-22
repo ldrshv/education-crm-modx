@@ -1,0 +1,129 @@
+Changelog for ZoomX.
+
+3.6.0-pl
+==============
+- Added creation of the $_POST array from json data.
+- Fixed route parsing for JSON requests again.
+
+3.5.1-pl
+==============
+- Fixed route parsing for JSON requests.
+
+3.5.0-pl
+==============
+- Added file plugins for mgr context.
+- Added support for contexts.
+- Improved the "resource" modifier.
+- Fixed plugin error during testing.
+- Fixed a bug with the route file (#18).
+
+3.4.2-pl
+==============
+- Fixed a bug with multiple calls of the same snippet with a set of parameters.
+- Fixed a bug with empty plugin list (#6).
+- The $events property of a file plugin can be an empty array (#7).
+- Added system setting "zoomx_config_path" for ZoomX configs (#8).
+- Smarty caching is now available for resources with DB Smarty template (#12).
+- Removed private magic methods of the Service class for PHP8 compatibility (#13).
+
+3.4.1-pl
+==============
+- Fixed the "runSnippet" and the "runFileSnippet" methods of the main service class.
+- Fixed creation of Smarty directories.
+- Fixed a bug with the controller method disappearing.
+- Fixed a bug with controller's namespace.
+
+3.4.0-pl
+==============
+- Added support for file plugins.
+- Added modifier "markdown".
+- Added the ability to specify the caching time for snippets.
+- Added the ability to use short controller names.
+- Added short redirect format in routes.
+- Added the "OnBeforeRouteProcess" event.
+- Added the "zoomx_cache_event_map" system setting.
+- Added the "zoomx_controller_namespace" system setting.
+- Improved the function jsonx.
+- Fixed a bug in the header name Content-Type for JSON requests.
+- Refactored security functionality.
+
+3.3.0-pl
+==============
+- Added route caching.
+- Added multiple paths for snippets.
+- Fixed a bug with unpublished resources (#3).
+
+3.2.0-pl
+==============
+- Added modifier "fuzzyDate".
+- Added modifier "dateAgo".
+- Fixed a bug with the availability of the $zoomx object in templates (#1).
+- Refactored the mechanism of virtual pages (#2).
+
+3.1.0-beta
+==============
+- Added modifier "declension".
+- Added the ability to use snippets as modifiers.
+- Added the "source" parameter to the request info.
+
+3.0.2-beta
+==============
+- Refactored the automatic content type detection.
+- Fixed the parse block for Smarty.
+
+3.0.1-beta
+==============
+- Added missing pdoTools adapter files.
+
+3.0.0-beta
+==============
+*******************************************************************************************
+*  WARNING! Only for a new installation. Do not update the previously installed version.  *
+*******************************************************************************************
+- Required PHP Version 7.1+.
+- Added Smarty as a default parser.
+- Added pdoTools adapter that replaces Fenom template engine with Smarty in pdoTools snippets.
+- Added support for file elements (snippets and chunks).
+- Added exception handler with trace details.
+- Added the helper function "filex" for downloading files.
+- Added the helper function "redirectx" for managing redirects.
+- Added onZoomxInit event.
+- Added the ability to extend the Service class using macros.
+- Added Smarty security support.
+- Particular virtual pages.
+
+2.1.1-beta
+==============
+- Some bugfixes.
+
+2.1.0-beta
+==============
+- Added "zoomx_autoload_resource" system setting which allows to disable the search and auto-loading the resource for the corresponding URI.
+- Fixed a bug when working in CLI mode.
+- Returned support of the GET parameter "q".
+
+2.0.0-beta
+==============
+- Added API mode that supports REST architecture.
+- Added support for controllers in routes.
+- Added OnRequestError event for error codes 400, 406, 415, 503 and any custom codes.
+- Added shorthand modifiers "js", "css" and "html".
+- Added MODX like tag syntax ({'*pagetitle'}, {'%lexicon'}, {'++setting'}, {'~5'}).
+- Refactored modifiers "url" and "lexicon".
+- Renamed the system setting "zoomx_routs_mode" on "zoomx_routing_mode".
+
+1.0.2-beta
+==============
+- Fixed bug with the path for compiled templates.
+- Added block "modx".
+
+1.0.1-beta
+==============
+- Allow the $modx object in templates.
+- Fixed bug with uninstalling.
+- Added modifier "modx".
+- Some code refactoring.
+
+1.0.0-beta
+==============
+- Initial release.
